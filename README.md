@@ -5,7 +5,7 @@ Get unicodes by range and exclude reserved words.
 ```ruby
 unicode_range = UnicodeRange.new(from: "FF10", to: "FF19")
 
-unicode_range.expand
+unicode_range.expand.to_a
 => [65296, 65297, 65298, 65299, 65300, 65301, 65302, 65303, 65304, 65305]
 
 unicode_range.expand.to_s
